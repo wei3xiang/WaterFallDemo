@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCell" id="afh-Xt-1fD" customClass="MyCell" customModule="WaterFallDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="181" height="276"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="181" height="276"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="价格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5A-Xb-EGa">
+                        <rect key="frame" x="0.0" y="255.5" width="90.5" height="20.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="已售" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eip-3Z-tTf">
+                        <rect key="frame" x="90.5" y="256" width="90.5" height="20.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="描述" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTe-RD-mK4">
+                        <rect key="frame" x="0.0" y="235" width="181" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kxY-ty-6ep">
+                        <rect key="frame" x="0.0" y="0.0" width="181" height="276"/>
+                        <animations/>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eip-3Z-tTf" secondAttribute="trailing" id="2o3-ct-lEE"/>
+                <constraint firstItem="eip-3Z-tTf" firstAttribute="leading" secondItem="T5A-Xb-EGa" secondAttribute="trailing" id="5lh-lQ-ila"/>
+                <constraint firstAttribute="bottom" secondItem="kxY-ty-6ep" secondAttribute="bottom" id="9sr-mm-Nh3"/>
+                <constraint firstItem="kxY-ty-6ep" firstAttribute="leading" secondItem="afh-Xt-1fD" secondAttribute="leading" id="AUC-ME-r0E"/>
+                <constraint firstAttribute="bottom" secondItem="T5A-Xb-EGa" secondAttribute="bottom" id="K7h-yo-yUn"/>
+                <constraint firstItem="T5A-Xb-EGa" firstAttribute="leading" secondItem="afh-Xt-1fD" secondAttribute="leading" id="YH1-87-7Xe"/>
+                <constraint firstAttribute="trailing" secondItem="hTe-RD-mK4" secondAttribute="trailing" id="dme-HR-ydU"/>
+                <constraint firstItem="eip-3Z-tTf" firstAttribute="width" secondItem="T5A-Xb-EGa" secondAttribute="width" id="gze-u2-1UL"/>
+                <constraint firstAttribute="bottom" secondItem="eip-3Z-tTf" secondAttribute="bottom" id="hFg-gi-4Tx"/>
+                <constraint firstItem="T5A-Xb-EGa" firstAttribute="top" secondItem="hTe-RD-mK4" secondAttribute="bottom" id="j9V-Wj-abV"/>
+                <constraint firstAttribute="trailing" secondItem="kxY-ty-6ep" secondAttribute="trailing" id="kyH-mn-tUs"/>
+                <constraint firstItem="kxY-ty-6ep" firstAttribute="top" secondItem="afh-Xt-1fD" secondAttribute="top" id="snx-WE-v3U"/>
+                <constraint firstItem="hTe-RD-mK4" firstAttribute="leading" secondItem="afh-Xt-1fD" secondAttribute="leading" id="ugt-Pa-tuX"/>
+            </constraints>
+            <size key="customSize" width="181" height="276"/>
+            <connections>
+                <outlet property="goodsDesLabel" destination="hTe-RD-mK4" id="Wex-eW-9m1"/>
+                <outlet property="priceLabel" destination="T5A-Xb-EGa" id="juQ-Vo-LWN"/>
+                <outlet property="soldDescribtionLabel" destination="eip-3Z-tTf" id="z3V-en-ory"/>
+            </connections>
+            <point key="canvasLocation" x="334.5" y="230"/>
+        </collectionViewCell>
+    </objects>
+</document>
